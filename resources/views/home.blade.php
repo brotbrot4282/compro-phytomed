@@ -28,6 +28,7 @@
                 style="font-family: 'Poppins', sans-serif;">
                 <a href="{{ url('/') }}" class="text-white">Home</a>
                 <a href="{{ url('/about') }}" class="text-white">About</a>
+                <a href="{{ url('/product') }}" class="text-white">Product</a>
                 <a href="{{ url('/services') }}" class="text-white">Services</a>
                 <a href="{{ url('/contact') }}" class="text-white">Contact</a>
             </nav>
@@ -45,6 +46,7 @@
             <nav class="flex flex-col p-4 space-y-3">
                 <a href="{{ url('/') }}" class="text-green-500">Home</a>
                 <a href="{{ url('/about') }}" class="text-green-500">About</a>
+                <a href="{{ url('/product') }}" class="text-green-500">Product</a>
                 <a href="{{ url('/services') }}" class="text-green-500">Services</a>
                 <a href="{{ url('/contact') }}" class="text-green-500">Contact</a>
             </nav>
@@ -72,8 +74,9 @@
     </section>
 
     <!-- Tentang Kami -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-6 md:px-12 text-center">
+    <section id="about" class="py-16 bg-white/bg-opacity-90">
+        <div class="container mx-auto px-6 md:px-12
+        text-center">
             <!-- Grid: gambar + teks -->
             <div class="grid md:grid-cols-2 gap-0 items-center mt-8 md:mt-12">
                 <!-- Gambar -->
@@ -184,8 +187,7 @@
                 <div class="gallery__hero">
                     <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
 
-                    <img
-                        src="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-01.jpg">
+                    <img src="https://duanaga.co.id/assets/img/product/1737357432X3tFNvNhM4i8Yi9.png">
                 </div>
                 <!--Gallery Hero-->
 
@@ -222,13 +224,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4, // tampilkan 4 logo sekaligus
-            spaceBetween: 10, // jarak antar logo
-            loop: true, // looping
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
             autoplay: {
-                delay: 2000, // ganti slide setiap 2 detik
+                delay: 2000,
                 disableOnInteraction: false,
             },
+            breakpoints: {
+                0: { // layar paling kecil (HP)
+                    slidesPerView: 1,
+                },
+                640: { // tablet kecil
+                    slidesPerView: 2,
+                },
+                1024: { // desktop
+                    slidesPerView: 4,
+                }
+            }
         });
     </script>
 

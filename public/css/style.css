@@ -105,3 +105,10 @@ button:hover {
 .gallery__thumbs a.is-active {
   opacity: 0.2;
 }
+.gallery__hero img {
+    max-width: 400px;  /* atur lebar maksimum sesuai kebutuhan */
+    width: 100%;       /* biar responsif */
+    height: auto;      /* jaga aspek rasio */
+    margin: 0 auto;    /* center */
+    display: block;
+}
