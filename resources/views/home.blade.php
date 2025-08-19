@@ -175,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        {{-- <div class="container">
 
             <!-- Gallery -->
             <div id="js-gallery" class="gallery">
@@ -212,7 +212,7 @@
             </div><!--.gallery-->
             <!-- Gallery -->
 
-        </div><!--.container-->
+        </div><!--.container--> --}}
     </section>
 
 
