@@ -112,3 +112,9 @@ button:hover {
     margin: 0 auto;    /* center */
     display: block;
 }
+@media screen and (max-width: 768px) {
+    .row-reverse {    
+      display: flex !important;
+    flex-direction: row-reverse;
+    }
+}
