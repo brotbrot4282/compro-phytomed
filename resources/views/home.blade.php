@@ -88,7 +88,7 @@
                 <!-- Teks -->
                 <div class="text-left space-y-4">
                     <h3 class="text-2xl font-semibold text-gray-800">Apa itu Phytomed Neo Farma?</h3>
-                    <p class="text-black">
+                    <p class="text-gray-600">
                         Phytomed Neo Farma merupakan pabrik herbal yang akan membantu anda mewujudkan brand milik anda.
                         Anda dapat menciptakan produk herbal dengan brand milik anda sendiri. Sedangkan Kami akan
                         menyediakan bahan baku, mesin dan tenaga kerja.
@@ -114,54 +114,74 @@
             </p>
 
             <!-- Grid 3 kolom -->
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-4 gap-8">
 
                 <!-- Box 1 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-                    <div class="text-green-500 text-5xl mb-4">🌿</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Formulasi Herbal Alami
+                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-white">
+                        <!-- Icon Formula Racikan -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path
+                                d="M9 2h6v2h-1v6.586l4.707 4.707a1 1 0 01-.707 1.707H6a1 1 0 01-.707-1.707L10 10.586V4H9V2zm2 8v-6h2v6.586l3.293 3.293H7.707L11 10.586zM5 20h14a1 1 0 010 2H5a1 1 0 110-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Formulasi & Racikan Herbal
                     </h3>
                     <p class="text-white">
-                        Pengembangan resep herbal eksklusif sesuai permintaan.
-
-                        Konsultasi dengan tim riset & ahli herbal.
-
-                        Penyesuaian formula berdasarkan tren pasar & kebutuhan konsumen.
+                        Pengembangan resep herbal eksklusif sesuai kebutuhan, dengan riset mendalam dari tim ahli.
                     </p>
                 </div>
-
                 <!-- Box 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-                    <div class="text-green-500 text-5xl mb-4">⚡</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Produksi Aman Di Tangan Kami</h3>
-                    <p class="text-black">
-                        Kami selalu melakukan riset dan inovasi untuk menghadirkan produk herbal berkualitas tinggi.
-                        Berbagai macam produk bisa dibuat di pabrik kami dan Tim terbaik kami siap membantu riset dan
-                        formulasi produk anda
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-500">
+                        <!-- Icon Produksi (Gear / Mesin) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.11-.2-.36-.28-.57-.22l-2.39.96a7.14
+                     7.14 0 0 0-1.62-.94l-.36-2.54A.486.486 0 0 0 14 2h-4c-.24 0-.44.17-.48.41l-.36
+                     2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.21-.06-.46.02-.57.22L2.66
+                     8.87c-.11.2-.06.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03
+                     1.58a.5.5 0 0 0-.12.61l1.92 3.32c.11.2.36.28.57.22l2.39-.96c.49.38
+                     1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h4c.24 0
+                     .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56
+                     1.62-.94l2.39.96c.21.06.46-.02.57-.22l1.92-3.32a.5.5
+                     0 0 0-.12-.61l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5
+                     3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                        Produksi & Manufaktur
+                    </h3>
+                    <p class="text-gray-800">
+                        Proses produksi modern dengan standar kualitas tinggi, menggunakan peralatan higienis, efisien,
+                        dan sesuai regulasi industri herbal.
                     </p>
                 </div>
+
 
                 <!-- Box 3 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-                    <div class="text-green-500 text-5xl mb-4">🤝</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Desain & Konsep Branding</h3>
-                    <p class="text-white">
-                        Konsultasi branding agar produk memiliki ciri khas.
-
-                        Desain kemasan modern & menarik sesuai identitas brand.
-
-                        Penyediaan berbagai pilihan packaging (botol, sachet, kapsul, box, dsb).
+                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-white">
+                        <!-- Icon Bohlam (Ide / Inovasi) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path d="M9 21h6v-1H9v1zm3-19C7.48 2 4 5.48 4 10c0
+                     3.07 1.64 5.64 4 7.17V19c0 .55.45 1 1
+                     1h6c.55 0 1-.45 1-1v-1.83c2.36-1.53
+                     4-4.1 4-7.17 0-4.52-3.48-8-8-8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Desain & Konsep Branding
+                    </h3>
+                    <p class="text-white mb-2">
+                        Konsultasi branding agar produk memiliki ciri khas. Desain kemasan modern & menarik sesuai
+                        identitas brand. Penyediaan berbagai pilihan packaging (botol, sachet, kapsul, box, dsb).
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="why-us" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6 md:px-12 text-center">
-            <!-- Grid 3 kolom -->
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <!-- Box 1 -->
+                <!-- Box 4 -->
                 <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
                     <div class="flex justify-center mb-4 text-green-500">
                         <!-- Icon Packaging -->
@@ -179,26 +199,70 @@
                     </p>
                 </div>
 
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 text-center">
 
-                <!-- Box 2 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-                    <div class="text-white text-5xl mb-4">⚡</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Produksi Aman Di Tangan Kami</h3>
+            <!-- Grid 4 kolom -->
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Box 5 -->
+                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-white">
+                        <!-- Icon Formula Racikan -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path d="M20.59 13.41l-7.17-7.17A2 2 0 0 0 12.17 6H6a2 2 0 0
+                     0-2 2v6.17c0 .53.21 1.04.59 1.41l7.17 7.17c.78.78
+                     2.05.78 2.83 0l6-6c.78-.78.78-2.05 0-2.83zM7.5
+                     10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">
+                        Label Pribadi
+                    </h3>
                     <p class="text-white">
-                        Kami selalu melakukan riset dan inovasi untuk menghadirkan produk herbal berkualitas tinggi.
-                        Berbagai macam produk bisa dibuat di pabrik kami dan Tim terbaik kami siap membantu riset dan
-                        formulasi produk anda
+                        Kami menyediakan layanan label pribadi sehingga Anda bisa memiliki produk dengan merek sendiri
+                        tanpa harus repot mengurus seluruh proses produksi.
                     </p>
                 </div>
 
-                <!-- Box 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-                    <div class="text-green-500 text-5xl mb-4">🤝</div>
+                <!-- Box 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-500">
+                        <!-- Icon Jabat Tangan -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28
+                     2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81
+                     4.5 2.09C13.09 3.81 14.76 3 16.5
+                     3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+                     6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Kepercayaan Pelanggan</h3>
                     <p class="text-gray-800">
                         Transparansi, kualitas, dan pelayanan terbaik adalah cara kami menjaga kepercayaan pelanggan.
                     </p>
                 </div>
+                <!-- Box 7 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-500">
+                        <!-- Icon Jabat Tangan -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-12 h-12">
+                            <path
+                                d="M3 6h11a1 1 0 0 1 1 1v3h3.586a1 1 0 0 1 .894.553L21.7 13.8A2 2 0 0 1 22 14.8V18a1 1 0 0 1-1 1h-1.05a2.75 2.75 0 0 1-5.9 0H9.95a2.75 2.75 0 0 1-5.9 0H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Logistik & Pengiriman</h3>
+                    <p class="text-gray-800">
+                        Dimanapun Anda berada, kami akan memproduksi kosmetik untuk Anda. Pengiriman dapat dipilih
+                        melalui laut, kereta, atau udara.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -233,34 +297,6 @@
             </div>
         </div>
         <div class="container">
-
-            <!-- Gallery -->
-            <div id="js-gallery" class="gallery">
-                <!--Gallery Hero-->
-
-                <!--Gallery Thumbs-->
-                <div class="gallery__thumbs">
-                    <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-01.jpg"
-                        data-gallery="thumb" class="is-active">
-                        <img
-                            src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-01.jpg">
-                    </a>
-                    <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-02.jpg"
-                        data-gallery="thumb">
-                        <img
-                            src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-02.jpg">
-                    </a>
-                    <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-03.jpg"
-                        data-gallery="thumb">
-                        <img
-                            src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-03.jpg">
-                    </a>
-                </div>
-                <!--Gallery Thumbs-->
-
-            </div><!--.gallery-->
-            <!-- Gallery -->
-
         </div><!--.container-->
     </section>
 
