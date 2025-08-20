@@ -101,16 +101,16 @@
             </div>
 
     </section>
-
-    <!-- Mengapa Harus Memilih Kami -->
-    <section id="why-us" class="py-16 bg-green-500">
+    <section id="why-us" class="py-20 bg-gray-opacity-90">
         <div class="container mx-auto px-6 md:px-12 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
-                Mengapa Harus Memilih Kami?
+            <h2 class="text-3xl md:text-5xl font-bold text-green-600 mb-6">
+                LAYANAN MAKLON HERBAL
             </h2>
-            <p class="text-white max-w-3xl mx-auto mb-12">
-                Kami berkomitmen memberikan produk herbal berkualitas dengan layanan terbaik
-                untuk menjaga kesehatan dan kepercayaan pelanggan.
+            <p class="text-green-600 max-w-3xl mx-auto mb-12">
+                Phytomed Neo Farma adalah perusahaan maklon herbal yang berkomitmen menghadirkan produk kesehatan
+                berbasis bahan alam dengan kualitas terbaik.
+                Didirikan sejak 2015, kami telah dipercaya sebagai mitra oleh berbagai brand untuk mengembangkan produk
+                herbal unggulan.
             </p>
 
             <!-- Grid 3 kolom -->
@@ -119,10 +119,14 @@
                 <!-- Box 1 -->
                 <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
                     <div class="text-green-500 text-5xl mb-4">🌿</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Kami Menggunakan Bahan Alami & Kualitas Tinggi
+                    <h3 class="text-xl font-semibold text-white mb-2">Formulasi Herbal Alami
                     </h3>
                     <p class="text-white">
-                        Produk kami terbuat dari bahan herbal alami, aman, dan terpercaya untuk kesehatan Anda.
+                        Pengembangan resep herbal eksklusif sesuai permintaan.
+
+                        Konsultasi dengan tim riset & ahli herbal.
+
+                        Penyesuaian formula berdasarkan tren pasar & kebutuhan konsumen.
                     </p>
                 </div>
 
@@ -140,9 +144,59 @@
                 <!-- Box 3 -->
                 <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
                     <div class="text-green-500 text-5xl mb-4">🤝</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Kepercayaan Pelanggan</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2">Desain & Konsep Branding</h3>
                     <p class="text-white">
-                        Kepuasan dan kepercayaan pelanggan adalah prioritas utama kami dalam setiap layanan.
+                        Konsultasi branding agar produk memiliki ciri khas.
+
+                        Desain kemasan modern & menarik sesuai identitas brand.
+
+                        Penyediaan berbagai pilihan packaging (botol, sachet, kapsul, box, dsb).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <!-- Grid 3 kolom -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Box 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-500">
+                        <!-- Icon Packaging -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-12 h-12">
+                            <path d="M3 7l9-4 9 4-9 4-9-4zm18 2v8l-9 4-9-4V9l9 4 9-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                        Packaging & Finishing
+                    </h3>
+                    <p class="text-gray-800">
+                        Pilihan desain kemasan premium maupun ekonomis, dengan sistem pengemasan rapi, aman, dan siap
+                        distribusi.
+                    </p>
+                </div>
+
+
+                <!-- Box 2 -->
+                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-white text-5xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Produksi Aman Di Tangan Kami</h3>
+                    <p class="text-white">
+                        Kami selalu melakukan riset dan inovasi untuk menghadirkan produk herbal berkualitas tinggi.
+                        Berbagai macam produk bisa dibuat di pabrik kami dan Tim terbaik kami siap membantu riset dan
+                        formulasi produk anda
+                    </p>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-green-500 text-5xl mb-4">🤝</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Kepercayaan Pelanggan</h3>
+                    <p class="text-gray-800">
+                        Transparansi, kualitas, dan pelayanan terbaik adalah cara kami menjaga kepercayaan pelanggan.
                     </p>
                 </div>
             </div>
@@ -182,13 +236,6 @@
 
             <!-- Gallery -->
             <div id="js-gallery" class="gallery">
-
-                <!--Gallery Hero-->
-                <div class="gallery__hero">
-                    <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
-
-                    <img src="https://duanaga.co.id/assets/img/product/1737357432X3tFNvNhM4i8Yi9.png">
-                </div>
                 <!--Gallery Hero-->
 
                 <!--Gallery Thumbs-->
