@@ -60,7 +60,6 @@
     </section>
 
     <!-- Product Section -->
-    <!-- Grid Produk -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <!-- Card Produk -->
         <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">

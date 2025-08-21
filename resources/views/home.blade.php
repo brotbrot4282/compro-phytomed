@@ -86,7 +86,7 @@
                 </div>
 
                 <!-- Teks -->
-                <div class="text-left space-y-4">
+                <div class="text-left space-y-4 md:space-y-6">
                     <h3 class="text-2xl font-semibold text-gray-800">Apa itu Phytomed Neo Farma?</h3>
                     <p class="text-gray-600">
                         Phytomed Neo Farma merupakan pabrik herbal yang akan membantu anda mewujudkan brand milik anda.
@@ -133,8 +133,8 @@
                     </p>
                 </div>
                 <!-- Box 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
-                    <div class="flex justify-center mb-4 text-green-500">
+                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                             class="w-12 h-12">
                             <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.11-.2-.36-.28-.57-.22l-2.39.96a7.14
@@ -179,8 +179,8 @@
                     </p>
                 </div>
                 <!-- Box 4 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
-                    <div class="flex justify-center mb-4 text-green-500">
+                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                             class="w-12 h-12">
                             <path d="M3 7l9-4 9 4-9 4-9-4zm18 2v8l-9 4-9-4V9l9 4 9-4z" />
@@ -203,8 +203,8 @@
 
             <div class="grid md:grid-cols-4 gap-4">
                 <!-- Box 5 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
-                    <div class="flex justify-center mb-4 text-green-500">
+                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                             class="w-12 h-12">
                             <path d="M20.59 13.41l-7.17-7.17A2 2 0 0 0 12.17 6H6a2 2 0 0
@@ -240,8 +240,8 @@
                     </p>
                 </div>
                 <!-- Box 7 -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
-                    <div class="flex justify-center mb-4 text-green-500">
+                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-12 h-12">
                             <path
@@ -271,172 +271,286 @@
                 </div>
             </div>
         </div>
+        <!-- Section Inovasi Teknologi -->
+        <section id="why-us" class="py-20 bg-gray-opacity-90">
+            <section class="wave-bg h-64 flex items-center justify-center text-white text-2xl font-bold">
+            </section>
+            <div class="w-full mx-auto px-6 md:px-12 text-center bg-green-600">
+                <h2 class="text-3xl md:text-5xl font-semibold text-white mb-6">
+                    INOVASI & TEKNOLOGI
+                </h2>
+                <div class="w-20 h-2 bg-white mx-auto mt-2 rounded-full mb-5"></div>
+                <div class="w-20 h-2 bg-green-600 mx-auto mt-2 rounded-full mb-5"></div>
+                <p class="text-white max-w-7xl mx-auto mb-8">
+                    Bagian Inovasi dan Teknologi dalam perusahaan minuman kami merupakan pusat kreativitas dan
+                    penelitian
+                    yang memandu evolusi produk kami. Tim kami terdiri dari para ahli inovasi, ilmuwan pangan, dan
+                    insinyur
+                    teknologi yang berdedikasi untuk menciptakan pengalaman minuman yang unik dan berkesan. Berfokus
+                    pada
+                    pemanfaatan teknologi terkini dan konsep inovatif, kami berkomitmen untuk memimpin tren industri dan
+                    memenuhi harapan konsumen yang terus berkembang.
+                </p>
+                <section class="py-12 bg-green-600">
+                    <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+                        <div>
+                            <span class="text-7xl font-bold text-white">01</span>
+                            <h2 class="text-2xl font-semibold text-white mt-4">Tim Riset Profesional</h2>
+                            <p class="mt-4 text-white leading-relaxed font-medium text-left">
+                                Memiliki tim riset ahli dan profesional di industri kimia untuk membuat produk kosmetik
+                                yang
+                                inovatif.
+                                Menjamin keamanan produk yang dihasilkan dengan uji laboratorium sesuai dengan standart.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/timriset.png') }}" alt="Tim Riset"
+                                class="rounded-2xl shadow-lg max-w-[550px] mx-auto w-full object-contain">
+                        </div>
+                    </div>
+                </section>
+                <section class="py-12 bg-green-600">
+                    <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+                        <!-- Text -->
+                        <div class="order-1 md:order-2">
+                            <span class="text-7xl font-bold text-white">02</span>
+                            <h2 class="text-2xl font-semibold text-white mt-4">Tim Produksi Profesional</h2>
+                            <p class="mt-4 text-white leading-relaxed font-medium text-left ">
+                                Memiliki tim produksi yang ahli dan profesional yang berpengalaman dalam melaksanakan
+                                produksi yang sesuai standar CPKB sehingga produk Anda terjamin kualitasnya.
+                            </p>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="order-2 md:order-1">
+                            <img src="{{ asset('images/produksi.png') }}" alt="Tim Riset"
+                                class="rounded-2xl shadow-lg max-w-[550px] mx-auto w-full object-contain">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="py-12 bg-green-600">
+                    <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+                        <div>
+                            <span class="text-7xl font-bold text-white">03</span>
+                            <h2 class="text-2xl font-semibold text-white mt-4">Gudang Penyimpanan Khusus</h2>
+                            <p class="mt-4 text-white leading-relaxed font-medium text-left">
+                                Kami memiliki gudang penyimpanan yang luas dengan penataan khusus disesuaikan dengan
+                                tujuan
+                                penyimpanan barang. Terdiri dari 3 tatanan khusus yaitu untuk bahan baku, bahan kemas,
+                                dan
+                                gudang produk jadi.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/gudang.png') }}" alt="Tim Riset"
+                                class="rounded-2xl shadow-lg max-w-[550px] mx-auto w-full object-contain">
+                        </div>
+                    </div>
+                </section>
+                <section class="py-12 bg-green-600">
+                    <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+                        <!-- Text -->
+                        <div class="order-1 md:order-2">
+                            <span class="text-7xl font-bold text-white">04</span>
+                            <h2 class="text-2xl font-semibold text-white mt-4">Mesin & Peralatan Canggih</h2>
+                            <p class="mt-4 text-white leading-relaxed font-medium text-left">
+                                Memilki mesin pengolah yang lengkap dengan teknologi canggih dan terkomputerisasi. Dapat
+                                mengolah dalam kapasitas tinggi dan menghasilkan produk yang berkualitas.
+                            </p>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="order-2 md:order-1">
+                            <img src="{{ asset('images/mesin.png') }}" alt="Tim Riset"
+                                class="rounded-2xl shadow-lg max-w-[550px] mx-auto w-full object-contain">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="py-20 bg-gray-opacity-90">
+            <div class="w-full mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-5xl font-semibold text-green-600 mb-6">
+                    CARA MEMULAI MAKLON
+                </h2>
+                <div class="w-20 h-2 bg-green-600 mx-auto mt-2 rounded-full mb-8"></div>
+                <section class="bg-white py-10 rounded-2xl shadow-lg">
+                    <!-- Baris Pertama -->
+                    <div class="relative flex flex-wrap items-center justify-center">
+                        <!-- garis horizontal hanya tampil di desktop -->
+                        <div class="absolute top-1/2 w-full border-t-2 border-gray-200 hidden lg:block">
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/consul1.png" alt="Step 1" class="w-16 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">1. Konsultasi Konsep Produk</h3>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/produk.png" alt="Step 2" class="w-16 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">2. Pembuatan Sampel Produk</h3>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/payment.png" alt="Step 3" class="w-16 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">3. Pembayaran Biaya Maklon</h3>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/legalitas.png" alt="Step 4" class="w-12 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">4. Legalitas Perizinan</h3>
+                        </div>
+                    </div>
+
+                    <!-- Baris Kedua -->
+                    <div class="relative flex flex-wrap items-center justify-center mt-16">
+                        <!-- garis horizontal hanya tampil di desktop -->
+                        <div class="absolute top-1/2 w-full border-t-2 border-gray-200 hidden lg:block">
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/package.png" alt="Step 5" class="w-12 h-14 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">5. Desain Kemasan</h3>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/step6.png" alt="Step 6" class="w-16 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">6. Proses Produksi</h3>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/step7.png" alt="Step 7" class="w-16 h-16 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">7. Quality Control</h3>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
+                            <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
+                                <img src="images/shipping.png" alt="Step 8" class="w-16 h-10 mx-auto">
+                            </div>
+                            <h3 class="mt-4 font-semibold text-green-600">8. Pengiriman Produk</h3>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        </div>
     </section>
-    <!-- Section Inovasi Teknologi -->
-    <section id="why-us" class="py-20 bg-gray-opacity-90">
+    <section id="why-us" class="py-5 bg-gray-opacity-90">
         <div class="w-full mx-auto px-6 md:px-12 text-center">
             <h2 class="text-3xl md:text-5xl font-semibold text-green-600 mb-6">
-                INOVASI & TEKNOLOGI
+                HUBUNGI KAMI
             </h2>
             <div class="w-20 h-2 bg-green-600 mx-auto mt-2 rounded-full mb-5"></div>
-            <p class="text-green-600 max-w-3xl mx-auto mb-8">
-                Bagian Inovasi dan Teknologi dalam perusahaan minuman kami merupakan pusat kreativitas dan penelitian
-                yang memandu evolusi produk kami. Tim kami terdiri dari para ahli inovasi, ilmuwan pangan, dan insinyur
-                teknologi yang berdedikasi untuk menciptakan pengalaman minuman yang unik dan berkesan. Berfokus pada
-                pemanfaatan teknologi terkini dan konsep inovatif, kami berkomitmen untuk memimpin tren industri dan
-                memenuhi harapan konsumen yang terus berkembang.
-            </p>
-            <section class="py-12 bg-gray-100">
-                <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-                    <div>
-                        <span class="text-5xl font-bold text-green-600">01</span>
-                        <h2 class="text-2xl font-semibold text-green-600 mt-4">Tim Riset Profesional</h2>
-                        <p class="mt-4 text-green-600 leading-relaxed font-medium">
-                            Memiliki tim riset ahli dan profesional di industri kimia untuk membuat produk kosmetik yang
-                            inovatif.
-                            Menjamin keamanan produk yang dihasilkan dengan uji laboratorium sesuai dengan standart.
+            <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-700">Kirimkan pesan kepada kami</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <input type="text" name="nama" placeholder="Nama"
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <input type="email" name="email" placeholder="E-mail"
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <input type="text" name="whatsapp" placeholder="No Whatsapp"
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <textarea name="pesan" placeholder="Pesan" rows="4"
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        <button type="submit"
+                            class="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow transition">
+                            Kirim
+                        </button>
+                    </form>
+                </div>
+
+                <!-- FAQ -->
+                <div class="space-y-4">
+
+                    <!-- Item -->
+                    <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                            Apa itu maklon Herbal?
+                        </summary>
+                        <p class="mt-2 text-green-600 text-left">Maklon herbal adalah jasa produksi produk kosmetik
+                            dan
+                            skincare sesuai brand Anda.</p>
+                    </details>
+
+                    <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                            Berapa minimal order quantity di Phytomed Neo Farma?
+                        </summary>
+                        <p class="mt-2 text-green-600 text-left">Minimal order quantity biasanya ditentukan sesuai
+                            jenis
+                            produk dan formulasi.</p>
+                    </details>
+
+                    <details class="bg-white rounded-xl shadow p-4  hover:drop-shadow-lg">
+                        <summary
+                            class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                            Apakah Phytomed Neo Farma membantu proses pendaftaran BPOM, HAKI dan sertifikasi
+                            Halal?
+                        </summary>
+                        <p class="mt-2  text-green-600 text-left">Ya, kami membantu seluruh proses legalitas dan
+                            sertifikasi.
                         </p>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/timriset.png') }}" alt="Tim Riset"
-                            class="rounded-2xl shadow-lg w-full object-cover">
-                    </div>
-                </div>
-            </section>
-            <section class="py-12 bg-gray-100">
-                <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10 row-reverse">
-                    <div>
-                        <img src="{{ asset('images/produksi.png') }}" alt="Tim Riset"
-                            class="rounded-2xl shadow-lg w-full object-cover">
-                    </div>
-                    <div>
-                        <span class="text-5xl font-bold text-green-600">02</span>
-                        <h2 class="text-2xl font-semibold text-green-600 mt-4">Tim Produksi Profesional</h2>
-                        <p class="mt-4 text-green-600 leading-relaxed font-medium">
-                            Memiliki tim produksi yang ahli dan profesional yang berpengalaman dalam melaksanakan
-                            produksi yang sesuai standar CPKB sehingga produk Anda terjamin kualitasnya.
-                    </div>
-            </section>
-            <section class="py-12 bg-gray-100">
-                <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-                    <div>
-                        <span class="text-5xl font-bold text-green-600">03</span>
-                        <h2 class="text-2xl font-semibold text-green-600 mt-4">Gudang Penyimpanan Khusus</h2>
-                        <p class="mt-4 text-green-600 leading-relaxed font-medium">
-                            Kami memiliki gudang penyimpanan yang luas dengan penataan khusus disesuaikan dengan tujuan
-                            penyimpanan barang. Terdiri dari 3 tatanan khusus yaitu untuk bahan baku, bahan kemas, dan
-                            gudang produk jadi
+                    </details>
+
+                    <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                            Apakah Dua Naga Kosmetindo menyediakan wadah dan kemasan sekaligus desain?
+                        </summary>
+                        <p class="mt-2 text-green-600 text-left">Kami menyediakan berbagai pilihan wadah, kemasan, dan
+                            desain
+                            sesuai kebutuhan.</p>
+                    </details>
+
+                    <details class="bg-white rounded-xl shadow p-4 hover:shadow-lg">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                            Bolehkah saya membawa kemasan atau wadah sendiri?
+                        </summary>
+                        <p class="mt-2 text-green-600 text-left">Bisa, Anda boleh membawa wadah atau kemasan sesuai
+                            keinginan.
                         </p>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/gudang.png') }}" alt="Tim Riset"
-                            class="rounded-2xl shadow-lg w-full object-cover">
-                    </div>
+                    </details>
+
+                    <details class="bg-white rounded-xl shadow p-4 hover:shadow-lg">
+                        <summary
+                            class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                            Bagaimana saya memulai bekerjasama dengan maklon Phytomed Neo Farma?
+                        </summary>
+                        <p class="mt-2  text-green-600 text-left">Cukup hubungi tim kami melalui form atau WhatsApp,
+                            lalu
+                            konsultasikan kebutuhan Anda.</p>
+                    </details>
+
                 </div>
-            </section>
-            <section class="py-12 bg-gray-100">
-                <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-                    <div>
-                        <img src="{{ asset('images/mesin.png') }}" alt="Tim Riset"
-                            class="rounded-2xl shadow-lg w-full object-cover">
-                    </div>
-                    <div>
-                        <span class="text-5xl font-bold text-green-600">04</span>
-                        <h2 class="text-2xl font-semibold text-green-600 mt-4">Mesin & Peralatan Canggih</h2>
-                        <p class="mt-4 text-green-600 leading-relaxed font-medium">
-                            Memilki mesin pengolah yang lengkap dengan teknologi canggih dan terkomputerisasi. Dapat
-                            mengolah dalam kapasitas tinggi dan menghasilkan produk yang berkualitas
-                    </div>
-            </section>
-            <section id="why-us" class="py-20 bg-gray-opacity-90">
-                <div class="w-full mx-auto px-6 md:px-12 text-center">
-                    <h2 class="text-3xl md:text-5xl font-semibold text-green-600 mb-6">
-                        CARA MEMULAI MAKLON
-                    </h2>
-                    <div class="w-20 h-2 bg-green-600 mx-auto mt-2 rounded-full mb-5"></div>
-
-                    <section class="bg-gray-100 py-10">
-                        <div class="container mx-auto px-4">
-                            <!-- Baris Pertama -->
-                            <div class="relative flex flex-wrap items-center justify-center">
-                                <!-- garis horizontal hanya tampil di desktop -->
-                                <div class="absolute top-1/2 w-full border-t-2 border-gray-200 hidden lg:block"></div>
-
-                                <!-- Step 1 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/consul1.png" alt="Step 1" class="w-16 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">1. Konsultasi Konsep Produk</h3>
-                                </div>
-
-                                <!-- Step 2 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/produk.png" alt="Step 2" class="w-16 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">2. Pembuatan Sampel Produk</h3>
-                                </div>
-
-                                <!-- Step 3 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/payment.png" alt="Step 3" class="w-16 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">3. Pembayaran Biaya Maklon</h3>
-                                </div>
-
-                                <!-- Step 4 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/legalitas.png" alt="Step 4" class="w-12 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">4. Legalitas Perizinan</h3>
-                                </div>
-                            </div>
-
-                            <!-- Baris Kedua -->
-                            <div class="relative flex flex-wrap items-center justify-center mt-16">
-                                <!-- garis horizontal hanya tampil di desktop -->
-                                <div class="absolute top-1/2 w-full border-t-2 border-gray-200 hidden lg:block"></div>
-
-                                <!-- Step 5 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/package.png" alt="Step 5" class="w-12 h-14 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">5. Desain Kemasan</h3>
-                                </div>
-
-                                <!-- Step 6 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/step6.png" alt="Step 6" class="w-16 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">6. Proses Produksi</h3>
-                                </div>
-
-                                <!-- Step 7 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/step7.png" alt="Step 7" class="w-16 h-16 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">7. Quality Control</h3>
-                                </div>
-
-                                <!-- Step 8 -->
-                                <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
-                                    <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                        <img src="images/shipping.png" alt="Step 8" class="w-16 h-10 mx-auto">
-                                    </div>
-                                    <h3 class="mt-4 font-semibold text-green-600">8. Pengiriman Produk</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-
+            </div>
             <!-- Section Klien Kami -->
             <!-- Tambahkan Swiper CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -450,7 +564,7 @@
                         <div class="swiper-wrapper">
                             <!-- Logo Klien -->
                             <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client1.png') }}" class="h-25" alt="Klien 1">
+                                <img src="{{ asset('images/client6.png') }}" class="h-25" alt="Klien 1">
                             </div>
                             <div class="swiper-slide flex justify-center">
                                 <img src="{{ asset('images/client2.png') }}" class="h-16" alt="Klien 2">
@@ -502,6 +616,16 @@
 
             <!-- CSS Animasi -->
             <style>
+                .wave3-bg {
+                    background: url('images/sumpelan3.png') no-repeat bottom center;
+                    background-size: cover;
+                }
+
+                .wave-bg {
+                    background: url('images/sumpelanbg.png') no-repeat bottom center;
+                    background-size: cover;
+                }
+
                 @keyframes slide {
                     0% {
                         transform: translateX(0);
@@ -518,134 +642,233 @@
                     animation: slide 20s linear infinite;
                 }
             </style>
+        </div>
 
 
-            <!-- Footer -->
-            <footer class="bg-black text-white text-center py-6">
-                <p>&copy; {{ date('Y') }} PT Phytomed Neo Farma. All rights reserved.</p>
-            </footer>
+        <!-- FOOTER -->
+        <footer class="bg-black text-white">
+            <div class="max-w-7xl mx-auto px-6 py-10">
+                <!-- Bagian Atas -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+                    <!-- Alamat -->
+                    <div>
+                        <h2 class="text-lg font-bold">PT. PHYTOMED NEO FARMA</h2>
+                        <div class="mt-4 space-y-3">
+                            <p class="flex items-start gap-2">
+                                <span> </span>
+                                <span>
+                                    Dk. GAMBIRAN, Ds. Krajan, Kec. Gatak, Kab. Sukoharjo, Jawa Tengah, (57557)
+                                </span>
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span> </span>
+                                <span>
+                                    CS 1: 0811 2717 464 <br>
+                                    CS 2: 0811 2800 278
+                                </span>
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span>✉️</span>
+                                <span>marketing@phytomed.co.id</span>
+                            </p>
+                        </div>
+                    </div>
 
-            <!-- Script Menu Mobile -->
-            <script>
-                const navbar = document.getElementById("navbar");
+                    <!-- Follow Us -->
+                    <div>
+                        <h2 class="text-lg font-bold">Follow Us</h2>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="hover:opacity-80 transition">
+                                <img src="{{ asset('images/logoig.png') }}" alt="Instagram" class="w-8 h-8">
+                            </a>
+                            <a href="#" class="hover:opacity-80 transition">
+                                <img src="{{ asset('images/logofb.png') }}" alt="Facebook" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                window.addEventListener("scroll", () => {
-                    if (window.scrollY > 50) {
-                        navbar.classList.add("bg-green-600", "shadow-md");
-                    } else {
-                        navbar.classList.remove("bg-green-600", "shadow-md");
-                    }
-                });
+                <!-- Bagian Bawah -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+                    <!-- Tentang Kami -->
+                    <div>
+                        <h3 class="font-bold mb-4">TENTANG KAMI</h3>
+                        <p class="text-sm leading-relaxed">
+                            Phytomed Neo Farma adalah perusahaan maklon herbal yang berkomitmen menghadirkan produk
+                            kesehatan berbasis bahan alam dengan kualitas terbaik. Didirikan sejak 2015, kami telah
+                            dipercaya sebagai mitra oleh berbagai brand untuk mengembangkan produk herbal unggulan.
+                        </p>
+                    </div>
 
-                // Mobile menu toggle
-                const menuBtn = document.getElementById('menu-btn');
-                const mobileMenu = document.getElementById('mobile-menu');
-                menuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            </script>
-            <script>
-                var App = (function() {
+                    <!-- Kategori Populer -->
+                    <div>
+                        <h3 class="font-bold mb-4">KATEGORI POPULER</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-green-500 transition">Sunscreen</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Face Care</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Body Care</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Lainnya</a></li>
+                        </ul>
+                    </div>
 
-                    //=== Use Strict ===//
-                    'use strict';
+                    <!-- Pabrik -->
+                    <div>
+                        <h3 class="font-bold mb-4">PABRIK</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-green-500 transition">Pabrikan</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Tim R & D</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Quality Control</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Pameran Perdagangan</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    //=== Private Variables ===//
-                    var gallery = $('#js-gallery');
+                    <!-- Layanan Turnkey -->
+                    <div>
+                        <h3 class="font-bold mb-4">LAYANAN KAMI</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-green-500 transition">Formulasi Kustom</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Kemasan Khusus</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Layanan Desain</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Produksi</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Layanan Sertifikat</a></li>
+                            <li><a href="#" class="hover:text-green-500 transition">Pergudangan & Logistik</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                    //=== Gallery Object ===//
-                    var Gallery = {
-                        zoom: function(imgContainer, img) {
-                            var containerHeight = imgContainer.outerHeight(),
-                                src = img.attr('src');
+            <!-- Copyright -->
+            <div class="bg-black text-center py-4 text-sm text-gray-400">
+                © 2025 PT. Dua Naga Kosmetindo. All Rights Reserved.
+            </div>
+        </footer>
 
-                            if (src.indexOf('/products/normal/') != -1) {
-                                // Set height of container
-                                imgContainer.css("height", containerHeight);
+        <!-- Copyright -->
 
-                                // Switch hero image src with large version
-                                img.attr('src', src.replace('/products/normal/', '/products/zoom/'));
 
-                                // Add zoomed class to gallery container
-                                gallery.addClass('is-zoomed');
+        <!-- Script Menu Mobile -->
+        <script>
+            const navbar = document.getElementById("navbar");
 
-                                // Enable image to be draggable
-                                img.draggable({
-                                    drag: function(event, ui) {
-                                        ui.position.left = Math.min(100, ui.position.left);
-                                        ui.position.top = Math.min(100, ui.position.top);
-                                    }
-                                });
-                            } else {
-                                // Ensure height of container fits image
-                                imgContainer.css("height", "auto");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("bg-green-600", "shadow-md");
+                } else {
+                    navbar.classList.remove("bg-green-600", "shadow-md");
+                }
+            });
 
-                                // Switch hero image src with normal version
-                                img.attr('src', src.replace('/products/zoom/', '/products/normal/'));
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+        <script>
+            var App = (function() {
 
-                                // Remove zoomed class to gallery container
-                                gallery.removeClass('is-zoomed');
-                            }
-                        },
-                        switch: function(trigger, imgContainer) {
-                            var src = trigger.attr('href'),
-                                thumbs = trigger.siblings(),
-                                img = trigger.parent().prev().children();
+                //=== Use Strict ===//
+                'use strict';
 
-                            // Add active class to thumb
-                            trigger.addClass('is-active');
+                //=== Private Variables ===//
+                var gallery = $('#js-gallery');
 
-                            // Remove active class from thumbs
-                            thumbs.each(function() {
-                                if ($(this).hasClass('is-active')) {
-                                    $(this).removeClass('is-active');
+                //=== Gallery Object ===//
+                var Gallery = {
+                    zoom: function(imgContainer, img) {
+                        var containerHeight = imgContainer.outerHeight(),
+                            src = img.attr('src');
+
+                        if (src.indexOf('/products/normal/') != -1) {
+                            // Set height of container
+                            imgContainer.css("height", containerHeight);
+
+                            // Switch hero image src with large version
+                            img.attr('src', src.replace('/products/normal/', '/products/zoom/'));
+
+                            // Add zoomed class to gallery container
+                            gallery.addClass('is-zoomed');
+
+                            // Enable image to be draggable
+                            img.draggable({
+                                drag: function(event, ui) {
+                                    ui.position.left = Math.min(100, ui.position.left);
+                                    ui.position.top = Math.min(100, ui.position.top);
                                 }
                             });
+                        } else {
+                            // Ensure height of container fits image
+                            imgContainer.css("height", "auto");
 
-                            // Reset container if in zoom state
-                            if (gallery.hasClass('is-zoomed')) {
-                                gallery.removeClass('is-zoomed');
-                                imgContainer.css("height", "auto");
-                            }
+                            // Switch hero image src with normal version
+                            img.attr('src', src.replace('/products/zoom/', '/products/normal/'));
 
-                            // Switch image source
-                            img.attr('src', src);
+                            // Remove zoomed class to gallery container
+                            gallery.removeClass('is-zoomed');
                         }
-                    };
+                    },
+                    switch: function(trigger, imgContainer) {
+                        var src = trigger.attr('href'),
+                            thumbs = trigger.siblings(),
+                            img = trigger.parent().prev().children();
 
-                    //=== Public Methods ===//
-                    function init() {
+                        // Add active class to thumb
+                        trigger.addClass('is-active');
 
-                        // Listen for clicks on anchors within gallery
-                        gallery.delegate('a', 'click', function(event) {
-                            var trigger = $(this);
-                            var triggerData = trigger.data("gallery");
-
-                            if (triggerData === 'zoom') {
-                                var imgContainer = trigger.parent(),
-                                    img = trigger.siblings();
-                                Gallery.zoom(imgContainer, img);
-                            } else if (triggerData === 'thumb') {
-                                var imgContainer = trigger.parent().siblings();
-                                Gallery.switch(trigger, imgContainer);
-                            } else {
-                                return;
+                        // Remove active class from thumbs
+                        thumbs.each(function() {
+                            if ($(this).hasClass('is-active')) {
+                                $(this).removeClass('is-active');
                             }
-
-                            event.preventDefault();
                         });
 
+                        // Reset container if in zoom state
+                        if (gallery.hasClass('is-zoomed')) {
+                            gallery.removeClass('is-zoomed');
+                            imgContainer.css("height", "auto");
+                        }
+
+                        // Switch image source
+                        img.attr('src', src);
                     }
+                };
 
-                    //=== Make Methods Public ===//
-                    return {
-                        init: init
-                    };
+                //=== Public Methods ===//
+                function init() {
 
-                })();
+                    // Listen for clicks on anchors within gallery
+                    gallery.delegate('a', 'click', function(event) {
+                        var trigger = $(this);
+                        var triggerData = trigger.data("gallery");
 
-                App.init();
-            </script>
+                        if (triggerData === 'zoom') {
+                            var imgContainer = trigger.parent(),
+                                img = trigger.siblings();
+                            Gallery.zoom(imgContainer, img);
+                        } else if (triggerData === 'thumb') {
+                            var imgContainer = trigger.parent().siblings();
+                            Gallery.switch(trigger, imgContainer);
+                        } else {
+                            return;
+                        }
+
+                        event.preventDefault();
+                    });
+
+                }
+
+                //=== Make Methods Public ===//
+                return {
+                    init: init
+                };
+
+            })();
+
+            App.init();
+        </script>
 
 </body>
 
