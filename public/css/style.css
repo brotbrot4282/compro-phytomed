@@ -22,7 +22,7 @@ header nav a:hover {
 
 button {
     padding: 10px 20px;
-    background: #007bff;
+    background: #ffff;
     border: none;
     color: white;
     border-radius: 5px;
@@ -43,10 +43,7 @@ button:hover {
   overflow: hidden;
 }
 
-/**
- * Gallery Styles
- * 1. Enable fluid images
- */
+
 .gallery {
   overflow: hidden;
 }

@@ -1,61 +1,35 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.app')
+@push('styles')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .wave3-bg {
+            background: url('images/sumpelan3.png') no-repeat bottom center;
+            background-size: cover;
+        }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - Home</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
-</head>
+        .wave-bg {
+            background: url('images/sumpelanbg.png') no-repeat bottom center;
+            background-size: cover;
+        }
 
-<body class="bg-gray-100" style="font-family: 'Poppins', sans-serif;">
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
 
-    <!-- Navbar -->
-    <header id="navbar" class="fixed w-full top-0 left-0 z-30 transition-all duration-300">
-        <div class="container mx-auto flex justify-between items-center py-1.5 p-4">
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
-            <!-- Logo -->
-            <div class="flex items-center pl-8">
-                <a href="#home">
-                    <img src="{{ asset('images/logopy1.png') }}" alt="Logo" class="h-12 w-auto">
-                </a>
-            </div>
-            <!-- Navigation (Center) -->
-            <nav class="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2 font-bold"
-                style="font-family: 'Poppins', sans-serif;">
-                <a href="{{ url('/') }}" class="text-white">Home</a>
-                <a href="{{ url('/about') }}" class="text-white">About</a>
-                <a href="{{ url('/product') }}" class="text-white">Product</a>
-                <a href="{{ url('/services') }}" class="text-white">Services</a>
-                <a href="{{ url('/contact') }}" class="text-white">Contact</a>
-            </nav>
-
-            <!-- Mobile Menu Button (Right) -->
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-white text-2xl focus:outline-none">
-                    ☰
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <nav class="flex flex-col p-4 space-y-3">
-                <a href="{{ url('/') }}" class="text-green-500">Home</a>
-                <a href="{{ url('/about') }}" class="text-green-500">About</a>
-                <a href="{{ url('/product') }}" class="text-green-500">Product</a>
-                <a href="{{ url('/services') }}" class="text-green-500">Services</a>
-                <a href="{{ url('/contact') }}" class="text-green-500">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-
-
-
+        .animate-slide {
+            display: flex;
+            width: max-content;
+            animation: slide 20s linear infinite;
+        }
+    </style>
+@endpush
+@section('content')
     <!-- Hero Section -->
     <section class="relative hero-bg h-screen flex flex-col items-center justify-center text-white">
 
@@ -117,10 +91,11 @@
             <div class="grid md:grid-cols-4 gap-4 ">
 
                 <!-- Box 1 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path
                                 d="M9 2h6v2h-1v6.586l4.707 4.707a1 1 0 01-.707 1.707H6a1 1 0 01-.707-1.707L10 10.586V4H9V2zm2 8v-6h2v6.586l3.293 3.293H7.707L11 10.586zM5 20h14a1 1 0 010 2H5a1 1 0 110-2z" />
                         </svg>
@@ -133,20 +108,21 @@
                     </p>
                 </div>
                 <!-- Box 2 -->
-                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.11-.2-.36-.28-.57-.22l-2.39.96a7.14
-                     7.14 0 0 0-1.62-.94l-.36-2.54A.486.486 0 0 0 14 2h-4c-.24 0-.44.17-.48.41l-.36
-                     2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.21-.06-.46.02-.57.22L2.66
-                     8.87c-.11.2-.06.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03
-                     1.58a.5.5 0 0 0-.12.61l1.92 3.32c.11.2.36.28.57.22l2.39-.96c.49.38
-                     1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h4c.24 0
-                     .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56
-                     1.62-.94l2.39.96c.21.06.46-.02.57-.22l1.92-3.32a.5.5
-                     0 0 0-.12-.61l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5
-                     3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                                                                         7.14 0 0 0-1.62-.94l-.36-2.54A.486.486 0 0 0 14 2h-4c-.24 0-.44.17-.48.41l-.36
+                                                                         2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.21-.06-.46.02-.57.22L2.66
+                                                                         8.87c-.11.2-.06.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03
+                                                                         1.58a.5.5 0 0 0-.12.61l1.92 3.32c.11.2.36.28.57.22l2.39-.96c.49.38
+                                                                         1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h4c.24 0
+                                                                         .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56
+                                                                         1.62-.94l2.39.96c.21.06.46-.02.57-.22l1.92-3.32a.5.5
+                                                                         0 0 0-.12-.61l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5
+                                                                         3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -160,14 +136,15 @@
 
 
                 <!-- Box 3 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path d="M9 21h6v-1H9v1zm3-19C7.48 2 4 5.48 4 10c0
-                     3.07 1.64 5.64 4 7.17V19c0 .55.45 1 1
-                     1h6c.55 0 1-.45 1-1v-1.83c2.36-1.53
-                     4-4.1 4-7.17 0-4.52-3.48-8-8-8z" />
+                                                                         3.07 1.64 5.64 4 7.17V19c0 .55.45 1 1
+                                                                         1h6c.55 0 1-.45 1-1v-1.83c2.36-1.53
+                                                                         4-4.1 4-7.17 0-4.52-3.48-8-8-8z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">
@@ -179,10 +156,11 @@
                     </p>
                 </div>
                 <!-- Box 4 -->
-                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path d="M3 7l9-4 9 4-9 4-9-4zm18 2v8l-9 4-9-4V9l9 4 9-4z" />
                         </svg>
                     </div>
@@ -203,14 +181,15 @@
 
             <div class="grid md:grid-cols-4 gap-4">
                 <!-- Box 5 -->
-                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path d="M20.59 13.41l-7.17-7.17A2 2 0 0 0 12.17 6H6a2 2 0 0
-                     0-2 2v6.17c0 .53.21 1.04.59 1.41l7.17 7.17c.78.78
-                     2.05.78 2.83 0l6-6c.78-.78.78-2.05 0-2.83zM7.5
-                     10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                                         0-2 2v6.17c0 .53.21 1.04.59 1.41l7.17 7.17c.78.78
+                                                                         2.05.78 2.83 0l6-6c.78-.78.78-2.05 0-2.83zM7.5
+                                                                         10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -223,15 +202,16 @@
                 </div>
 
                 <!-- Box 6 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28
-                     2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81
-                     4.5 2.09C13.09 3.81 14.76 3 16.5
-                     3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-                     6.86-8.55 11.54L12 21.35z" />
+                                                                         2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81
+                                                                         4.5 2.09C13.09 3.81 14.76 3 16.5
+                                                                         3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+                                                                         6.86-8.55 11.54L12 21.35z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">Kepercayaan Pelanggan</h3>
@@ -240,10 +220,11 @@
                     </p>
                 </div>
                 <!-- Box 7 -->
-                <div class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
                             <path
                                 d="M3 6h11a1 1 0 0 1 1 1v3h3.586a1 1 0 0 1 .894.553L21.7 13.8A2 2 0 0 1 22 14.8V18a1 1 0 0 1-1 1h-1.05a2.75 2.75 0 0 1-5.9 0H9.95a2.75 2.75 0 0 1-5.9 0H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z" />
                         </svg>
@@ -255,10 +236,11 @@
                     </p>
                 </div>
                 <!-- Box 8 -->
-                <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                <div
+                    class="bg-green-600 p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center transition-transform duration-300 ease-in-out 
+              hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="w-12 h-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
                             <path
                                 d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 14-4-4 1.41-1.41L11 13.17l5.59-5.59L18 9l-7 7Z" />
                         </svg>
@@ -438,7 +420,7 @@
                         <!-- Step 6 -->
                         <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
                             <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                <img src="images/step6.png" alt="Step 6" class="w-16 h-16 mx-auto">
+                                <img src="images/prosesproduksi.png" alt="Step 6" class="w-16 h-16 mx-auto">
                             </div>
                             <h3 class="mt-4 font-semibold text-green-600">6. Proses Produksi</h3>
                         </div>
@@ -446,7 +428,7 @@
                         <!-- Step 7 -->
                         <div class="relative w-full sm:w-1/2 lg:w-1/4 px-4 text-center mb-10">
                             <div class="bg-white inline-block p-4 rounded-full shadow-md z-10 hover:shadow-lg">
-                                <img src="images/step7.png" alt="Step 7" class="w-16 h-16 mx-auto">
+                                <img src="images/QC.png" alt="Step 7" class="w-16 h-16 mx-auto">
                             </div>
                             <h3 class="mt-4 font-semibold text-green-600">7. Quality Control</h3>
                         </div>
@@ -474,13 +456,13 @@
                     <h3 class="text-lg font-semibold mb-4 text-gray-700">Kirimkan pesan kepada kami</h3>
                     <form action="#" method="POST" class="space-y-4">
                         <input type="text" name="nama" placeholder="Nama"
-                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
                         <input type="email" name="email" placeholder="E-mail"
-                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
                         <input type="text" name="whatsapp" placeholder="No Whatsapp"
-                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
                         <textarea name="pesan" placeholder="Pesan" rows="4"
-                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
                         <button type="submit"
                             class="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow transition">
                             Kirim
@@ -511,8 +493,7 @@
                     </details>
 
                     <details class="bg-white rounded-xl shadow p-4  hover:drop-shadow-lg">
-                        <summary
-                            class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
                             Apakah Phytomed Neo Farma membantu proses pendaftaran BPOM, HAKI dan sertifikasi
                             Halal?
                         </summary>
@@ -540,8 +521,7 @@
                     </details>
 
                     <details class="bg-white rounded-xl shadow p-4 hover:shadow-lg">
-                        <summary
-                            class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                        <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
                             Bagaimana saya memulai bekerjasama dengan maklon Phytomed Neo Farma?
                         </summary>
                         <p class="mt-2  text-green-600 text-left">Cukup hubungi tim kami melalui form atau WhatsApp,
@@ -553,7 +533,7 @@
             </div>
             <!-- Section Klien Kami -->
             <!-- Tambahkan Swiper CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
             <section class="py-16 bg-gray-100">
                 <div class="container mx-auto text-center">
@@ -587,186 +567,40 @@
 
 
             <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 4,
-                    spaceBetween: 10,
-                    loop: true,
-                    autoplay: {
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    },
-                    breakpoints: {
-                        0: { // layar paling kecil (HP)
-                            slidesPerView: 1,
-                        },
-                        640: { // tablet kecil
-                            slidesPerView: 2,
-                        },
-                        1024: { // desktop
-                            slidesPerView: 4,
-                        }
-                    }
-                });
-            </script>
 
 
             <!-- CSS Animasi -->
-            <style>
-                .wave3-bg {
-                    background: url('images/sumpelan3.png') no-repeat bottom center;
-                    background-size: cover;
-                }
 
-                .wave-bg {
-                    background: url('images/sumpelanbg.png') no-repeat bottom center;
-                    background-size: cover;
-                }
-
-                @keyframes slide {
-                    0% {
-                        transform: translateX(0);
-                    }
-
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-
-                .animate-slide {
-                    display: flex;
-                    width: max-content;
-                    animation: slide 20s linear infinite;
-                }
-            </style>
         </div>
-
-
-        <!-- FOOTER -->
-        <footer class="bg-black text-white">
-            <div class="max-w-7xl mx-auto px-6 py-10">
-                <!-- Bagian Atas -->
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
-                    <!-- Alamat -->
-                    <div>
-                        <h2 class="text-lg font-bold">PT. PHYTOMED NEO FARMA</h2>
-                        <div class="mt-4 space-y-3">
-                            <p class="flex items-start gap-2">
-                                <span> </span>
-                                <span>
-                                    Dk. GAMBIRAN, Ds. Krajan, Kec. Gatak, Kab. Sukoharjo, Jawa Tengah, (57557)
-                                </span>
-                            </p>
-                            <p class="flex items-start gap-2">
-                                <span> </span>
-                                <span>
-                                    CS 1: 0811 2717 464 <br>
-                                    CS 2: 0811 2800 278
-                                </span>
-                            </p>
-                            <p class="flex items-start gap-2">
-                                <span>✉️</span>
-                                <span>marketing@phytomed.co.id</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Follow Us -->
-                    <div>
-                        <h2 class="text-lg font-bold">Follow Us</h2>
-                        <div class="flex space-x-4 mt-4">
-                            <a href="#" class="hover:opacity-80 transition">
-                                <img src="{{ asset('images/logoig.png') }}" alt="Instagram" class="w-8 h-8">
-                            </a>
-                            <a href="#" class="hover:opacity-80 transition">
-                                <img src="{{ asset('images/logofb.png') }}" alt="Facebook" class="w-8 h-8">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bagian Bawah -->
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
-                    <!-- Tentang Kami -->
-                    <div>
-                        <h3 class="font-bold mb-4">TENTANG KAMI</h3>
-                        <p class="text-sm leading-relaxed">
-                            Phytomed Neo Farma adalah perusahaan maklon herbal yang berkomitmen menghadirkan produk
-                            kesehatan berbasis bahan alam dengan kualitas terbaik. Didirikan sejak 2015, kami telah
-                            dipercaya sebagai mitra oleh berbagai brand untuk mengembangkan produk herbal unggulan.
-                        </p>
-                    </div>
-
-                    <!-- Kategori Populer -->
-                    <div>
-                        <h3 class="font-bold mb-4">KATEGORI POPULER</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-green-500 transition">Sunscreen</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Face Care</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Body Care</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Lainnya</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Pabrik -->
-                    <div>
-                        <h3 class="font-bold mb-4">PABRIK</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-green-500 transition">Pabrikan</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Tim R & D</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Quality Control</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Pameran Perdagangan</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Layanan Turnkey -->
-                    <div>
-                        <h3 class="font-bold mb-4">LAYANAN KAMI</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-green-500 transition">Formulasi Kustom</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Kemasan Khusus</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Layanan Desain</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Produksi</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Layanan Sertifikat</a></li>
-                            <li><a href="#" class="hover:text-green-500 transition">Pergudangan & Logistik</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="bg-black text-center py-4 text-sm text-gray-400">
-                © 2025 PT. Dua Naga Kosmetindo. All Rights Reserved.
-            </div>
-        </footer>
-
-        <!-- Copyright -->
-
-
-        <!-- Script Menu Mobile -->
+    @endsection
+    <!-- Copyright -->
+    @push('scripts')
         <script>
-            const navbar = document.getElementById("navbar");
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add("bg-green-600", "shadow-md");
-                } else {
-                    navbar.classList.remove("bg-green-600", "shadow-md");
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: { // layar paling kecil (HP)
+                        slidesPerView: 1,
+                    },
+                    640: { // tablet kecil
+                        slidesPerView: 2,
+                    },
+                    1024: { // desktop
+                        slidesPerView: 4,
+                    }
                 }
-            });
-
-            // Mobile menu toggle
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
             });
         </script>
+
+
+
+
         <script>
             var App = (function() {
 
@@ -869,7 +703,4 @@
 
             App.init();
         </script>
-
-</body>
-
-</html>
+    @endpush

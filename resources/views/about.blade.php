@@ -1,86 +1,150 @@
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - about</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body class="bg-gray-100">
-
-    <!-- Navbar -->
-    <header class="bg-black shadow-md fixed w-full top-0 left-0 z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
-
-            <!-- Logo -->
-            <div class="text-xl font-bold text-white">
-                PYTHOMED
+@extends('layouts.app')
+@push('styles')
+    @section('content')
+        <section class="relative h-screen flex flex-col items-center justify-center text-white bg-cover bg-center"
+            style="background-image: url('{{ asset('images/bgtentangkami.png') }}');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
+                <p class="text-lg md:text-xl mb-6">HERBAL MEDICINE COMPANY</p>
             </div>
+        </section>
+        <section id="why-us" class="py-5 bg-gray-opacity-90">
+            <div class="w-full mx-auto px-6 md:px-12 text-center py-20">
+                <h2 class="text-3xl md:text-5xl font-semibold text-green-600 mb-6">
+                    HUBUNGI KAMI
+                </h2>
+                <div class="w-20 h-2 bg-green-600 mx-auto mt-2 rounded-full mb-5"></div>
+                <div class="w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+                    <div class="bg-white rounded-2xl shadow p-6">
+                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Kirimkan pesan kepada kami</h3>
+                        <form action="#" method="POST" class="space-y-4">
+                            <input type="text" name="nama" placeholder="Nama"
+                                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <input type="email" name="email" placeholder="E-mail"
+                                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <input type="text" name="whatsapp" placeholder="No Whatsapp"
+                                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <textarea name="pesan" placeholder="Pesan" rows="4"
+                                class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow transition">
+                                Kirim
+                            </button>
+                        </form>
+                    </div>
 
-            <!-- Navigation (Center) -->
-            <nav class="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
-                <a href="{{ url('/') }}" class="text-white hover:text-red-600">Home</a>
-                <a href="{{ url('/about') }}" class="text-white hover:text-red-600">About</a>
-                <a href="{{ url('/services') }}" class="text-white hover:text-red-600">Services</a>
-                <a href="{{ url('/contact') }}" class="text-white hover:text-red-600">Contact</a>
-            </nav>
+                    <!-- FAQ -->
+                    <div class="space-y-4">
 
-            <!-- Mobile Menu Button (Right) -->
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-white text-2xl focus:outline-none">
-                    ☰
-                </button>
+                        <!-- Item -->
+                        <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                                Apa itu maklon Herbal?
+                            </summary>
+                            <p class="mt-2 text-green-600 text-left">Maklon herbal adalah jasa produksi produk kosmetik
+                                dan
+                                skincare sesuai brand Anda.</p>
+                        </details>
+
+                        <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                                Berapa minimal order quantity di Phytomed Neo Farma?
+                            </summary>
+                            <p class="mt-2 text-green-600 text-left">Minimal order quantity biasanya ditentukan sesuai
+                                jenis
+                                produk dan formulasi.</p>
+                        </details>
+
+                        <details class="bg-white rounded-xl shadow p-4  hover:drop-shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                                Apakah Phytomed Neo Farma membantu proses pendaftaran BPOM, HAKI dan sertifikasi
+                                Halal?
+                            </summary>
+                            <p class="mt-2  text-green-600 text-left">Ya, kami membantu seluruh proses legalitas dan
+                                sertifikasi.
+                            </p>
+                        </details>
+
+                        <details class="bg-white rounded-xl shadow p-4 hover:drop-shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                                Apakah Dua Naga Kosmetindo menyediakan wadah dan kemasan sekaligus desain?
+                            </summary>
+                            <p class="mt-2 text-green-600 text-left">Kami menyediakan berbagai pilihan wadah, kemasan, dan
+                                desain
+                                sesuai kebutuhan.</p>
+                        </details>
+
+                        <details class="bg-white rounded-xl shadow p-4 hover:shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between">
+                                Bolehkah saya membawa kemasan atau wadah sendiri?
+                            </summary>
+                            <p class="mt-2 text-green-600 text-left">Bisa, Anda boleh membawa wadah atau kemasan sesuai
+                                keinginan.
+                            </p>
+                        </details>
+
+                        <details class="bg-white rounded-xl shadow p-4 hover:shadow-lg">
+                            <summary class="cursor-pointer font-medium text-gray-700 flex items- justify-between text-left">
+                                Bagaimana saya memulai bekerjasama dengan maklon Phytomed Neo Farma?
+                            </summary>
+                            <p class="mt-2  text-green-600 text-left">Cukup hubungi tim kami melalui form atau WhatsApp,
+                                lalu
+                                konsultasikan kebutuhan Anda.</p>
+                        </details>
+
+                    </div>
+                </div>
             </div>
-        </div>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            <section class="py-16 bg-gray-100">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-8">Klien Kami</h2>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
-            <nav class="flex flex-col p-4 space-y-3">
-                <a href="{{ url('/') }}" class="text-white hover:text-red-600">Home</a>
-                <a href="{{ url('/about') }}" class="text-white hover:text-red-600">About</a>
-                <a href="{{ url('/services') }}" class="text-white hover:text-red-600">Services</a>
-                <a href="{{ url('/contact') }}" class="text-white hover:text-red-600">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-
-    <!-- Hero Section -->
-    <section class="relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-white"
-        style="background-image: url('{{ asset('images/backgroundhome.jpg') }}');">
-        <!-- Overlay biar teks jelas -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-        <!-- Konten Hero -->
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">ABOUT US</h1>
-            <p class="text-lg md:text-xl mb-6">Kami adalah perusahaan yang bergerak di bidang Herbal</p>
-            <a href="{{ url('/about') }}"
-                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
-                Pelajari Lebih Lanjut
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center p-4 bg-black text-white">
-        <p>&copy; {{ date('Y') }} Perusahaan Kami. All rights reserved.</p>
-    </footer>
-
-    <!-- Script Menu Mobile -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-
-</html>
+                    <!-- Swiper Container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Logo Klien -->
+                            <div class="swiper-slide flex justify-center">
+                                <img src="{{ asset('images/client6.png') }}" class="h-25" alt="Klien 1">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="{{ asset('images/client2.png') }}" class="h-16" alt="Klien 2">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="{{ asset('images/client3.png') }}" class="h-16" alt="Klien 3">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="{{ asset('images/client4.png') }}" class="h-20" alt="Klien 4">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="{{ asset('images/client5.png') }}" class="h-20" alt="Klien 5">
+                            </div>
+                        </div>
+            </section>
+        @endsection
+        @push('scripts')
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1
+                        },
+                        640: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 4
+                        }
+                    }
+                });
+            </script>
+        @endpush
