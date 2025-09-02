@@ -18,6 +18,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/service', function () {
-    return view('service');
+Route::get('/services', function () {
+    return view('services');
 });

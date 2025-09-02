@@ -2,65 +2,84 @@
 @push('styles')
 @endpush
 @section('content')
-    <!-- Hero -->
-    <section class="relative h-72 flex items-center justify-center text-center text-green-500 bg-cover bg-center"
-        style="background-image: url('{{ asset('images/product-hermain.jpg') }}');">
-        <div class="absolute inset-0 bg-white bg-opacity-50"></div>
-        <div class="relative z-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-2">Produk Kami</h1>
-            <p class="text-lg md:text-xl">Solusi Herbal Terbaik untuk Kesehatan Anda</p>
+    <section class="relative h-[400px] flex items-center justify-center text-white bg-cover bg-center"
+        style="background-image: url('{{ asset('images/main.png') }}');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Produk Kami</h1>
+            <p class="text-lg md:text-xl mb-6">HERBAL MEDICINE COMPANY</p>
         </div>
     </section>
 
-    <!-- Product Section -->
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <!-- Card Produk -->
-        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img src="{{ asset('images/sunscreen1.png') }}" alt="Produk 1" class="w-full h-48 object-cover">
-            <div class="p-8">
-                <h3 class="text-lg font-semibold mb-2">Produk Herbal 1</h3>
-                <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk herbal pertama.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
-                    Lihat Detail
-                </a>
-            </div>
+    <body class="bg-gray-50">
+        <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <aside class="md:col-span-1 bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-bold mb-6">Kategori Produk</h2>
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center cursor-pointer hover:text-green-600">Sunscreen </li>
+                    <li class="flex justify-between items-center cursor-pointer hover:text-green-600">Lip Care </li>
+                    <li class="flex justify-between items-center cursor-pointer hover:text-green-600">Face Care </li>
+                    <li class="flex justify-between items-center cursor-pointer hover:text-green-600">Pregnancy Skin Care
+                    </li>
+                    <li class="flex justify-between items-center cursor-pointer hover:text-green-600">Men Care </li>
+                </ul>
+            </aside>
+
+            <main class="md:col-span-3">
+                <!-- Grid Produk -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/moist1.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Chamomile & Argan Oil Shampoo Body Wash</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/hairoil1.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">5% Glycolic Acid Underarm Brightening Spray Cream</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/sunscreen1.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/sunscreen2.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/hairessence.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/rosescrub.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/bodyscrub.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/sunscreen2.png') }}" alt="Tentang Kami">
+                        <h3 class="font-medium text-gray-800">Matcha Greentea Body Scrub</h3>
+                        <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-500">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+            </main>
         </div>
 
-        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img src="{{ asset('images/sunscreen2.png') }}" alt="Produk 2" class="w-full h-48 object-cover">
-            <div class="p-8">
-                <h3 class="text-lg font-semibold mb-2">Produk Herbal 2</h3>
-                <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk herbal kedua.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
-                    Lihat Detail
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img src="{{ asset('images/hairoil1.png') }}" alt="Produk 3" class="w-full h-48 object-cover">
-            <div class="p-8">
-                <h3 class="text-lg font-semibold mb-2">Produk Herbal 3</h3>
-                <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk herbal ketiga.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
-                    Lihat Detail
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-            <img src="{{ asset('images/moist1.png') }}" alt="Produk 4" class="w-full h-48 object-cover">
-            <div class="p-8">
-                <h3 class="text-lg font-semibold mb-2">Produk Herbal 4</h3>
-                <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk herbal keempat.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
-                    Lihat Detail
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </section>
     </body>
 
     </html>

@@ -2,11 +2,6 @@
 @push('styles')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        .wave3-bg {
-            background: url('images/sumpelan3.png') no-repeat bottom center;
-            background-size: cover;
-        }
-
         .wave-bg {
             background: url('images/sumpelanbg.png') no-repeat bottom center;
             background-size: cover;
@@ -34,7 +29,7 @@
     <section class="relative hero-bg h-screen flex flex-col items-center justify-center text-white">
 
         <!-- Overlay biar teks jelas -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
         <!-- Konten Hero -->
         <div class="relative z-10 text-center px-4">
@@ -46,35 +41,39 @@
             </a>
         </div>
     </section>
+    <section class="w-full max-w-5xl mx-auto py-10">
+        <div class="swiper mySwiper rounded-2xl shadow-lg">
+            <div class="swiper-wrapper">
 
-    <!-- Tentang Kami -->
-    <section id="about" class="py-16 bg-white/bg-opacity-90">
-        <div class="container mx-auto px-6 md:px-12
-        text-center">
-            <!-- Grid: gambar + teks -->
-            <div class="grid md:grid-cols-2 gap-0 items-center mt-8 md:mt-12">
-                <!-- Gambar -->
-                <div class="flex justify-center">
-                    <img src="{{ asset('images/konten2.jpg') }}" alt="Tentang Kami"
-                        class="rounded-2xl shadow-lg w-full max-w-md">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="images/konten1.png" alt="Slide 1"
+                        class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-2xl">
                 </div>
 
-                <!-- Teks -->
-                <div class="text-left space-y-4 md:space-y-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Apa itu Phytomed Neo Farma?</h3>
-                    <p class="text-gray-600">
-                        Phytomed Neo Farma merupakan pabrik herbal yang akan membantu anda mewujudkan brand milik anda.
-                        Anda dapat menciptakan produk herbal dengan brand milik anda sendiri. Sedangkan Kami akan
-                        menyediakan bahan baku, mesin dan tenaga kerja.
-
-                        Kami akan membantu proses produksi dari awal dan perizinan seperti Legalitas HKI, BPOM, hingga
-                        produk anda siap jual Kami satu-satunya pabrik yang memberikan Konsultasi Gratis, Kunjungan
-                        Pabrik, dan Jasa Produksi paling terjangkau.
-                    </p>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="images/konten2.1.png" alt="Slide 2"
+                        class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-2xl">
                 </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="images/konten1.3.png" alt="Slide 3"
+                        class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-2xl">
+                </div>
+
             </div>
 
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
+
+
+    <!-- Pagination (bulatan bawah) -->
+    <div class="swiper-pagination"></div>
+    </div>
     <section id="why-us" class="py-20 bg-gray-opacity-90">
         <div class="container mx-auto px-6 md:px-12 text-center">
             <h2 class="text-3xl md:text-5xl font-bold text-green-600 mb-6">
@@ -113,16 +112,17 @@
               hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
-                            <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.11-.2-.36-.28-.57-.22l-2.39.96a7.14
-                                                                         7.14 0 0 0-1.62-.94l-.36-2.54A.486.486 0 0 0 14 2h-4c-.24 0-.44.17-.48.41l-.36
-                                                                         2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.21-.06-.46.02-.57.22L2.66
-                                                                         8.87c-.11.2-.06.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03
-                                                                         1.58a.5.5 0 0 0-.12.61l1.92 3.32c.11.2.36.28.57.22l2.39-.96c.49.38
-                                                                         1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h4c.24 0
-                                                                         .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56
-                                                                         1.62-.94l2.39.96c.21.06.46-.02.57-.22l1.92-3.32a.5.5
-                                                                         0 0 0-.12-.61l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5
-                                                                         3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                            <path
+                                d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.11-.2-.36-.28-.57-.22l-2.39.96a7.14
+                                                                                                                                                                                                                                                 7.14 0 0 0-1.62-.94l-.36-2.54A.486.486 0 0 0 14 2h-4c-.24 0-.44.17-.48.41l-.36
+                                                                                                                                                                                                                                                 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.21-.06-.46.02-.57.22L2.66
+                                                                                                                                                                                                                                                 8.87c-.11.2-.06.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03
+                                                                                                                                                                                                                                                 1.58a.5.5 0 0 0-.12.61l1.92 3.32c.11.2.36.28.57.22l2.39-.96c.49.38
+                                                                                                                                                                                                                                                 1.03.7 1.62.94l.36 2.54c.04.24.24.41.48.41h4c.24 0
+                                                                                                                                                                                                                                                 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56
+                                                                                                                                                                                                                                                 1.62-.94l2.39.96c.21.06.46-.02.57-.22l1.92-3.32a.5.5
+                                                                                                                                                                                                                                                 0 0 0-.12-.61l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5
+                                                                                                                                                                                                                                                 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -141,10 +141,11 @@
               hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
-                            <path d="M9 21h6v-1H9v1zm3-19C7.48 2 4 5.48 4 10c0
-                                                                         3.07 1.64 5.64 4 7.17V19c0 .55.45 1 1
-                                                                         1h6c.55 0 1-.45 1-1v-1.83c2.36-1.53
-                                                                         4-4.1 4-7.17 0-4.52-3.48-8-8-8z" />
+                            <path
+                                d="M9 21h6v-1H9v1zm3-19C7.48 2 4 5.48 4 10c0
+                                                                                                                                                                                                                                                 3.07 1.64 5.64 4 7.17V19c0 .55.45 1 1
+                                                                                                                                                                                                                                                 1h6c.55 0 1-.45 1-1v-1.83c2.36-1.53
+                                                                                                                                                                                                                                                 4-4.1 4-7.17 0-4.52-3.48-8-8-8z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">
@@ -186,10 +187,11 @@
               hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-green-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
-                            <path d="M20.59 13.41l-7.17-7.17A2 2 0 0 0 12.17 6H6a2 2 0 0
-                                                                         0-2 2v6.17c0 .53.21 1.04.59 1.41l7.17 7.17c.78.78
-                                                                         2.05.78 2.83 0l6-6c.78-.78.78-2.05 0-2.83zM7.5
-                                                                         10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                            <path
+                                d="M20.59 13.41l-7.17-7.17A2 2 0 0 0 12.17 6H6a2 2 0 0
+                                                                                                                                                                                                                                                 0-2 2v6.17c0 .53.21 1.04.59 1.41l7.17 7.17c.78.78
+                                                                                                                                                                                                                                                 2.05.78 2.83 0l6-6c.78-.78.78-2.05 0-2.83zM7.5
+                                                                                                                                                                                                                                                 10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -207,11 +209,12 @@
               hover:shadow-xl hover:-translate-y-2">
                     <div class="flex justify-center mb-4 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-12 h-12">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28
-                                                                         2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81
-                                                                         4.5 2.09C13.09 3.81 14.76 3 16.5
-                                                                         3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
-                                                                         6.86-8.55 11.54L12 21.35z" />
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28
+                                                                                                                                                                                                                                                 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81
+                                                                                                                                                                                                                                                 4.5 2.09C13.09 3.81 14.76 3 16.5
+                                                                                                                                                                                                                                                 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4
+                                                                                                                                                                                                                                                 6.86-8.55 11.54L12 21.35z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">Kepercayaan Pelanggan</h3>
@@ -531,176 +534,150 @@
 
                 </div>
             </div>
-            <!-- Section Klien Kami -->
-            <!-- Tambahkan Swiper CSS -->
+        </div>
+    </section>
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Klien Kami</h2>
 
-
-            <section class="py-16 bg-gray-100">
-                <div class="container mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-8">Klien Kami</h2>
-
-                    <!-- Swiper Container -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Logo Klien -->
-                            <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client6.png') }}" class="h-25" alt="Klien 1">
-                            </div>
-                            <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client2.png') }}" class="h-16" alt="Klien 2">
-                            </div>
-                            <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client3.png') }}" class="h-16" alt="Klien 3">
-                            </div>
-                            <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client4.png') }}" class="h-20" alt="Klien 4">
-                            </div>
-                            <div class="swiper-slide flex justify-center">
-                                <img src="{{ asset('images/client5.png') }}" class="h-20" alt="Klien 5">
-                            </div>
-                        </div>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Logo Klien -->
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ asset('images/client6.png') }}" class="h-25" alt="Klien 1">
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ asset('images/client2.png') }}" class="h-16" alt="Klien 2">
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ asset('images/client3.png') }}" class="h-16" alt="Klien 3">
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ asset('images/client4.png') }}" class="h-20" alt="Klien 4">
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <img src="{{ asset('images/client5.png') }}" class="h-20" alt="Klien 5">
                     </div>
                 </div>
-                <div class="container">
-                </div><!--.container-->
-            </section>
-
-
-            <!-- Swiper JS -->
-
-
-            <!-- CSS Animasi -->
-
+            </div>
         </div>
-    @endsection
-    <!-- Copyright -->
-    @push('scripts')
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    0: { // layar paling kecil (HP)
-                        slidesPerView: 1,
-                    },
-                    640: { // tablet kecil
-                        slidesPerView: 2,
-                    },
-                    1024: { // desktop
-                        slidesPerView: 4,
-                    }
-                }
-            });
-        </script>
+        <div class="container">
+        </div><!--.container-->
+    </section>
+    </div>
+@endsection
+<!-- Copyright -->
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var App = (function() {
+            'use strict';
+            var gallery = $('#js-gallery');
 
+            //=== Gallery Object ===//
+            var Gallery = {
+                zoom: function(imgContainer, img) {
+                    var containerHeight = imgContainer.outerHeight(),
+                        src = img.attr('src');
 
+                    if (src.indexOf('/products/normal/') != -1) {
+                        // Set height of container
+                        imgContainer.css("height", containerHeight);
 
+                        // Switch hero image src with large version
+                        img.attr('src', src.replace('/products/normal/', '/products/zoom/'));
 
-        <script>
-            var App = (function() {
+                        // Add zoomed class to gallery container
+                        gallery.addClass('is-zoomed');
 
-                //=== Use Strict ===//
-                'use strict';
-
-                //=== Private Variables ===//
-                var gallery = $('#js-gallery');
-
-                //=== Gallery Object ===//
-                var Gallery = {
-                    zoom: function(imgContainer, img) {
-                        var containerHeight = imgContainer.outerHeight(),
-                            src = img.attr('src');
-
-                        if (src.indexOf('/products/normal/') != -1) {
-                            // Set height of container
-                            imgContainer.css("height", containerHeight);
-
-                            // Switch hero image src with large version
-                            img.attr('src', src.replace('/products/normal/', '/products/zoom/'));
-
-                            // Add zoomed class to gallery container
-                            gallery.addClass('is-zoomed');
-
-                            // Enable image to be draggable
-                            img.draggable({
-                                drag: function(event, ui) {
-                                    ui.position.left = Math.min(100, ui.position.left);
-                                    ui.position.top = Math.min(100, ui.position.top);
-                                }
-                            });
-                        } else {
-                            // Ensure height of container fits image
-                            imgContainer.css("height", "auto");
-
-                            // Switch hero image src with normal version
-                            img.attr('src', src.replace('/products/zoom/', '/products/normal/'));
-
-                            // Remove zoomed class to gallery container
-                            gallery.removeClass('is-zoomed');
-                        }
-                    },
-                    switch: function(trigger, imgContainer) {
-                        var src = trigger.attr('href'),
-                            thumbs = trigger.siblings(),
-                            img = trigger.parent().prev().children();
-
-                        // Add active class to thumb
-                        trigger.addClass('is-active');
-
-                        // Remove active class from thumbs
-                        thumbs.each(function() {
-                            if ($(this).hasClass('is-active')) {
-                                $(this).removeClass('is-active');
+                        // Enable image to be draggable
+                        img.draggable({
+                            drag: function(event, ui) {
+                                ui.position.left = Math.min(100, ui.position.left);
+                                ui.position.top = Math.min(100, ui.position.top);
                             }
                         });
+                    } else {
+                        // Ensure height of container fits image
+                        imgContainer.css("height", "auto");
 
-                        // Reset container if in zoom state
-                        if (gallery.hasClass('is-zoomed')) {
-                            gallery.removeClass('is-zoomed');
-                            imgContainer.css("height", "auto");
-                        }
+                        // Switch hero image src with normal version
+                        img.attr('src', src.replace('/products/zoom/', '/products/normal/'));
 
-                        // Switch image source
-                        img.attr('src', src);
+                        // Remove zoomed class to gallery container
+                        gallery.removeClass('is-zoomed');
                     }
-                };
+                },
+                switch: function(trigger, imgContainer) {
+                    var src = trigger.attr('href'),
+                        thumbs = trigger.siblings(),
+                        img = trigger.parent().prev().children();
 
-                //=== Public Methods ===//
-                function init() {
+                    // Add active class to thumb
+                    trigger.addClass('is-active');
 
-                    // Listen for clicks on anchors within gallery
-                    gallery.delegate('a', 'click', function(event) {
-                        var trigger = $(this);
-                        var triggerData = trigger.data("gallery");
-
-                        if (triggerData === 'zoom') {
-                            var imgContainer = trigger.parent(),
-                                img = trigger.siblings();
-                            Gallery.zoom(imgContainer, img);
-                        } else if (triggerData === 'thumb') {
-                            var imgContainer = trigger.parent().siblings();
-                            Gallery.switch(trigger, imgContainer);
-                        } else {
-                            return;
+                    // Remove active class from thumbs
+                    thumbs.each(function() {
+                        if ($(this).hasClass('is-active')) {
+                            $(this).removeClass('is-active');
                         }
-
-                        event.preventDefault();
                     });
 
+                    // Reset container if in zoom state
+                    if (gallery.hasClass('is-zoomed')) {
+                        gallery.removeClass('is-zoomed');
+                        imgContainer.css("height", "auto");
+                    }
+
+                    // Switch image source
+                    img.attr('src', src);
                 }
+            };
 
-                //=== Make Methods Public ===//
-                return {
-                    init: init
-                };
+            //=== Public Methods ===//
+            function init() {
 
-            })();
+                // Listen for clicks on anchors within gallery
+                gallery.delegate('a', 'click', function(event) {
+                    var trigger = $(this);
+                    var triggerData = trigger.data("gallery");
 
-            App.init();
-        </script>
-    @endpush
+                    if (triggerData === 'zoom') {
+                        var imgContainer = trigger.parent(),
+                            img = trigger.siblings();
+                        Gallery.zoom(imgContainer, img);
+                    } else if (triggerData === 'thumb') {
+                        var imgContainer = trigger.parent().siblings();
+                        Gallery.switch(trigger, imgContainer);
+                    } else {
+                        return;
+                    }
+
+                    event.preventDefault();
+                });
+
+            }
+
+            //=== Make Methods Public ===//
+            return {
+                init: init
+            };
+
+        })();
+
+        App.init();
+    </script>
+@endpush

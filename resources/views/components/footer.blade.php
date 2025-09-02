@@ -10,7 +10,7 @@
                     <p class="flex items-start gap-2">
                         <span> </span>
                         <span>
-                            Dk. GAMBIRAN, Ds. Krajan, Kec. Gatak, Kab. Sukoharjo, Jawa Tengah, (57557)
+                            Jl. Gawok No.7, Dusun I, Geneng, Kec. Gatak, Kabupaten Sukoharjo, Jawa Tengah (57557)
                         </span>
                     </p>
                     <p class="flex items-start gap-2">
@@ -31,9 +31,10 @@
             <div>
                 <h2 class="text-lg font-bold">Follow Us</h2>
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="hover:opacity-80 transition">
+                    <a href="https://www.instagram.com/phytomedneofarma" target="_blank" rel="noopener noreferrer">
                         <img src="{{ asset('images/logoig.png') }}" alt="Instagram" class="w-8 h-8">
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition">
                         <img src="{{ asset('images/logofb.png') }}" alt="Facebook" class="w-8 h-8">
                     </a>
@@ -53,7 +54,7 @@
                 </p>
             </div>
 
-            <!-- Kategori Populer -->
+
             <div>
                 <h3 class="font-bold mb-4">KATEGORI POPULER</h3>
                 <ul class="space-y-2 text-sm">
@@ -64,7 +65,7 @@
                 </ul>
             </div>
 
-            <!-- Pabrik -->
+
             <div>
                 <h3 class="font-bold mb-4">PABRIK</h3>
                 <ul class="space-y-2 text-sm">
@@ -75,8 +76,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Layanan Turnkey -->
             <div>
                 <h3 class="font-bold mb-4">LAYANAN KAMI</h3>
                 <ul class="space-y-2 text-sm">
@@ -91,9 +90,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Copyright -->
     <div class="bg-black text-center py-4 text-sm text-gray-400">
-        © 2025 PT. Dua Naga Kosmetindo. All Rights Reserved.
+        © 2025 PT. Phytomed Neo Farma. All Rights Reserved.
     </div>
 </footer>
